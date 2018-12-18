@@ -1,0 +1,156 @@
+/home/hdh/Env/p3ten10/bin/python3.5 /home/hdh/Documents/BigdataNLP/sent_classification/main.py --hparams=hparams/default.json --data=amazon_reviews
+2018-12-18 10:59:14,049 | INFO     | Loaded hyper-parameter configuration from file: hparams/default.json
+2018-12-18 10:59:14,049 | INFO     | 
+Hyper-parameters: {
+'num_filters': 50, 
+'num_epochs': 9, 
+'glove_dir': './glove.6B', 
+'filter_size': [2, 3, 4, 5], 
+'dropout_keep_prob': 0.5, 
+'batch_size': 16, 
+'model': 'char_lstm_classifier', 
+'root_dir': './runs/char_lstm_classifier', 
+'vocab_size': 10000, 
+'char_embedding_dim': 50, 
+'rnn_hidden_dim': 256, 
+'embedding_dim': 300
+}
+
+0 These long cables work fine for my truck , but the quality seems a little on the shabby side . For the money I was not expecting 200 dollar snap-on jumper cables but these seem more like what you would see at a chinese knock off shop like harbor freight for 30 bucks .
+1 They are rather small and really cheaply constructed i could have bought stuff at the store to build these cheaper they went with my old pop up trailer when i traded it in .
+2 As soon as I plugged it in I heard a `` pop '' . No output . I guess try another inverter and probably another Cobra .
+3 This is a small funnel , It will work for just abought any task.Small and easy to store in a zip lock bag to keep it clean .
+4 this is the cleaner and oil for kn , what more do you want ? finger will hurt after using the spray bottle , so pony up more for the regular hand sprayer or aerosol type or even put the cleaner in a hand sprayer yourself . Be innovative people..
+5 I tried to get at the local auto parts stores , no on had in stock , thank you amazon , now my front plate and it does n't rattle any more
+6 Noticed a big change after putting into the tranny . not the cheapest but who wants to break down on the road
+7 Cheap , but huge ! Love it ! I will never have a vehicle without these again ! I highly recommend them . I 'm watching The Rock right now . I had to type 20 words .
+8 Filter is one of the best , price is one of the worst in the market.When you can get one of these for 5.38 at KMart why would you even want to buy it from amazon ? I do not .
+9 This is a common problem on all these sealers , the caps are horrible and they are basically one time use . The latest trick i have used is putting a clear wrap under the cap to help seal it but even so after time it hardens . The product itself works well and it costs a bit as you can tell compared to non cooper mix .
+
+
+Theselongcablesworkfineformytruck,butthequalityseemsalittleontheshabbyside.ForthemoneyIwasnotexpecting200dollarsnap-onjumpercablesbuttheseseemmorelikewhatyouwouldseeatachineseknockoffshoplikeharborfreightfor30bucks.Theyarerathersmallandreallycheaplyconstructedicouldhaveboughtstuffatthestoretobuildthesecheapertheywentwithmyoldpopuptrailerwhenitradeditin.AssoonasIpluggeditinIhearda``pop''.Nooutput.IguesstryanotherinverterandprobablyanotherCobra.Thisisasmallfunnel,Itwillworkforjustaboughtanytask.Smallandeasytostoreinaziplockbagtokeepitclean.thisisthecleanerandoilforkn,whatmoredoyouwant?fingerwillhurtafterusingthespraybottle,soponyupmorefortheregularhandsprayeroraerosoltypeorevenputthecleanerinahandsprayeryourself.Beinnovativepeople..Itriedtogetatthelocalautopartsstores,noonhadinstock,thankyouamazon,nowmyfrontplateanditdoesn'trattleanymoreNoticedabigchangeafterputtingintothetranny.notthecheapestbutwhowantstobreakdownontheroadCheap,buthuge!Loveit!Iwillneverhaveavehiclewithouttheseagain!Ihighlyrecommendthem.I'mwatchingTheRockrightnow.Ihadtotype20words.Filterisoneofthebest,priceisoneoftheworstinthemarket.Whenyoucangetoneofthesefor5.38atKMartwhywouldyouevenwanttobuyitfromamazon?Idonot.Thisisacommonproblemonallthesesealers,thecapsarehorribleandtheyarebasicallyonetimeuse.Thelatesttrickihaveusedisputtingaclearwrapunderthecaptohelpsealitbutevensoaftertimeithardens.Theproductitselfworkswellanditcostsabitasyoucantellcomparedtononcoopermix.
+
+2018-12-18 10:59:14.227864: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+Word Embedding shape:  (5194, 300)
+
+2018-12-18 10:59:14.292616: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-12-18 10:59:14.293018: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:01:00.0
+totalMemory: 3.94GiB freeMemory: 3.47GiB
+2018-12-18 10:59:14.293031: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2018-12-18 10:59:14.511193: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-18 10:59:14.511220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2018-12-18 10:59:14.511226: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2018-12-18 10:59:14.511370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3194 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980, pci bus id: 0000:01:00.0, compute capability: 5.2)
+Building graph for model: Text Classifier
+char key error :  E
+char key error :  U
+char key error :  6
+char key error :  &
+char key error :  O
+char key error :  /
+char key error :  1
+char key error :  D
+char key error :  V
+char key error :  P
+char key error :  J
+char key error :  G
+char key error :  H
+char key error :  9
+char key error :  Y
+char key error :  ;
+char key error :  (
+char key error :  )
+char key error :  #
+char key error :  4
+char key error :  7
+char key error :  X
+char key error :  ~
+char key error :  %
+char key error :  *
+char key error :  Z
+char key error :  $
+char key error :  Q
+char key error :  :
+char key error :  =
+char key error :  _
+char key error :  +
+char key error :  @
+2018-12-18 10:59:17,582 | INFO     | [Step 10] loss: 0.6421, accuracy: 75.00%
+2018-12-18 10:59:18,376 | INFO     | [Step 20] loss: 0.5840, accuracy: 62.50%
+2018-12-18 10:59:19,160 | INFO     | [Step 30] loss: 0.6662, accuracy: 62.50%
+2018-12-18 10:59:19,964 | INFO     | [Step 40] loss: 0.8517, accuracy: 56.25%
+2018-12-18 10:59:20,705 | INFO     | [Step 50] loss: 0.7812, accuracy: 37.50%
+2018-12-18 10:59:21,462 | INFO     | [Step 60] loss: 0.5165, accuracy: 81.25%
+2018-12-18 10:59:21,674 | INFO     | End of epoch 1.
+2018-12-18 10:59:21,901 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181218-105914/saves_char_lstm_classifier/model.ckpt-63
+2018-12-18 10:59:22,418 | INFO     | [Step 70] loss: 0.6666, accuracy: 50.00%
+2018-12-18 10:59:23,205 | INFO     | [Step 80] loss: 0.3357, accuracy: 87.50%
+2018-12-18 10:59:23,900 | INFO     | [Step 90] loss: 0.1905, accuracy: 93.75%
+2018-12-18 10:59:24,631 | INFO     | [Step 100] loss: 0.4170, accuracy: 75.00%
+2018-12-18 10:59:25,441 | INFO     | [Step 110] loss: 0.4228, accuracy: 68.75%
+2018-12-18 10:59:26,208 | INFO     | [Step 120] loss: 0.2355, accuracy: 93.75%
+2018-12-18 10:59:26,654 | INFO     | End of epoch 2.
+2018-12-18 10:59:26,825 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181218-105914/saves_char_lstm_classifier/model.ckpt-126
+2018-12-18 10:59:27,122 | INFO     | [Step 130] loss: 0.2260, accuracy: 100.00%
+2018-12-18 10:59:27,850 | INFO     | [Step 140] loss: 0.1035, accuracy: 100.00%
+2018-12-18 10:59:28,662 | INFO     | [Step 150] loss: 0.1134, accuracy: 93.75%
+2018-12-18 10:59:29,377 | INFO     | [Step 160] loss: 0.0546, accuracy: 100.00%
+2018-12-18 10:59:30,170 | INFO     | [Step 170] loss: 0.5892, accuracy: 75.00%
+2018-12-18 10:59:30,928 | INFO     | [Step 180] loss: 0.2023, accuracy: 81.25%
+2018-12-18 10:59:31,588 | INFO     | End of epoch 3.
+2018-12-18 10:59:31,759 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181218-105914/saves_char_lstm_classifier/model.ckpt-189
+2018-12-18 10:59:31,841 | INFO     | [Step 190] loss: 0.0549, accuracy: 100.00%
+2018-12-18 10:59:32,587 | INFO     | [Step 200] loss: 0.1011, accuracy: 93.75%
+2018-12-18 10:59:33,396 | INFO     | [Step 210] loss: 0.1322, accuracy: 93.75%
+2018-12-18 10:59:34,196 | INFO     | [Step 220] loss: 0.0119, accuracy: 100.00%
+2018-12-18 10:59:34,982 | INFO     | [Step 230] loss: 0.0823, accuracy: 100.00%
+2018-12-18 10:59:35,730 | INFO     | [Step 240] loss: 0.0530, accuracy: 100.00%
+2018-12-18 10:59:36,466 | INFO     | [Step 250] loss: 0.0080, accuracy: 100.00%
+2018-12-18 10:59:36,601 | INFO     | End of epoch 4.
+2018-12-18 10:59:36,764 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181218-105914/saves_char_lstm_classifier/model.ckpt-252
+2018-12-18 10:59:37,355 | INFO     | [Step 260] loss: 0.0166, accuracy: 100.00%
+2018-12-18 10:59:38,133 | INFO     | [Step 270] loss: 0.0330, accuracy: 100.00%
+2018-12-18 10:59:38,853 | INFO     | [Step 280] loss: 0.0088, accuracy: 100.00%
+2018-12-18 10:59:39,589 | INFO     | [Step 290] loss: 0.0012, accuracy: 100.00%
+2018-12-18 10:59:40,347 | INFO     | [Step 300] loss: 0.0021, accuracy: 100.00%
+2018-12-18 10:59:41,123 | INFO     | [Step 310] loss: 0.0003, accuracy: 100.00%
+2018-12-18 10:59:41,489 | INFO     | End of epoch 5.
+2018-12-18 10:59:41,729 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181218-105914/saves_char_lstm_classifier/model.ckpt-315
+2018-12-18 10:59:42,102 | INFO     | [Step 320] loss: 0.0021, accuracy: 100.00%
+2018-12-18 10:59:42,888 | INFO     | [Step 330] loss: 0.0003, accuracy: 100.00%
+2018-12-18 10:59:43,610 | INFO     | [Step 340] loss: 0.0006, accuracy: 100.00%
+2018-12-18 10:59:44,325 | INFO     | [Step 350] loss: 0.0001, accuracy: 100.00%
+2018-12-18 10:59:45,096 | INFO     | [Step 360] loss: 0.0003, accuracy: 100.00%
+2018-12-18 10:59:45,840 | INFO     | [Step 370] loss: 0.0001, accuracy: 100.00%
+2018-12-18 10:59:46,417 | INFO     | End of epoch 6.
+2018-12-18 10:59:46,586 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181218-105914/saves_char_lstm_classifier/model.ckpt-378
+2018-12-18 10:59:46,731 | INFO     | [Step 380] loss: 0.0001, accuracy: 100.00%
+2018-12-18 10:59:47,471 | INFO     | [Step 390] loss: 0.0001, accuracy: 100.00%
+2018-12-18 10:59:48,244 | INFO     | [Step 400] loss: 0.0005, accuracy: 100.00%
+2018-12-18 10:59:48,981 | INFO     | [Step 410] loss: 0.0002, accuracy: 100.00%
+2018-12-18 10:59:49,754 | INFO     | [Step 420] loss: 0.0003, accuracy: 100.00%
+2018-12-18 10:59:50,512 | INFO     | [Step 430] loss: 0.0001, accuracy: 100.00%
+2018-12-18 10:59:51,254 | INFO     | [Step 440] loss: 0.0006, accuracy: 100.00%
+2018-12-18 10:59:51,319 | INFO     | End of epoch 7.
+2018-12-18 10:59:51,485 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181218-105914/saves_char_lstm_classifier/model.ckpt-441
+2018-12-18 10:59:52,150 | INFO     | [Step 450] loss: 0.0001, accuracy: 100.00%
+2018-12-18 10:59:52,934 | INFO     | [Step 460] loss: 0.0000, accuracy: 100.00%
+2018-12-18 10:59:53,664 | INFO     | [Step 470] loss: 0.0003, accuracy: 100.00%
+2018-12-18 10:59:54,420 | INFO     | [Step 480] loss: 0.0003, accuracy: 100.00%
+2018-12-18 10:59:55,212 | INFO     | [Step 490] loss: 0.0002, accuracy: 100.00%
+2018-12-18 10:59:55,972 | INFO     | [Step 500] loss: 0.0003, accuracy: 100.00%
+2018-12-18 10:59:56,251 | INFO     | End of epoch 8.
+2018-12-18 10:59:56,422 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181218-105914/saves_char_lstm_classifier/model.ckpt-504
+2018-12-18 10:59:56,901 | INFO     | [Step 510] loss: 0.0002, accuracy: 100.00%
+2018-12-18 10:59:57,691 | INFO     | [Step 520] loss: 0.0004, accuracy: 100.00%
+2018-12-18 10:59:58,399 | INFO     | [Step 530] loss: 0.0003, accuracy: 100.00%
+2018-12-18 10:59:59,105 | INFO     | [Step 540] loss: 0.0002, accuracy: 100.00%
+2018-12-18 10:59:59,880 | INFO     | [Step 550] loss: 0.0002, accuracy: 100.00%
+2018-12-18 11:00:00,625 | INFO     | [Step 560] loss: 0.0003, accuracy: 100.00%
+2018-12-18 11:00:01,128 | INFO     | End of epoch 9.
+2018-12-18 11:00:01,297 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181218-105914/saves_char_lstm_classifier/model.ckpt-567
+
+Process finished with exit code 0
+

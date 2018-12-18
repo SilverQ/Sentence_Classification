@@ -1,0 +1,2 @@
+2018-12-14 16:27:05,371 | INFO     | Loaded hyper-parameter configuration from file: hparams/default.json | 49:train_model
+2018-12-14 16:27:05,371 | INFO     | Hyper-parameters: {'filter_size': [2, 3, 4, 5], 'num_epochs': 9, 'char_embedding_dim': 50, 'glove_dir': './glove.6B', 'root_dir': './runs/char_lstm_classifier', 'embedding_dim': 300, 'num_filters': 50, 'dropout_keep_prob': 0.5, 'batch_size': 16, 'model': 'char_lstm_classifier', 'vocab_size': 10000, 'rnn_hidden_dim': 256} | 50:train_model

@@ -1,0 +1,128 @@
+/home/hdh/Env/p3ten10/bin/python3.5 /home/hdh/Documents/BigdataNLP/sent_classification/main.py --hparams=hparams/default.json --data=CoNLL-2003
+2018-12-18 11:01:07,613 | INFO     | Loaded hyper-parameter configuration from file: hparams/default.json
+2018-12-18 11:01:07,613 | INFO     | Hyper-parameters: {'num_filters': 50, 'root_dir': './runs/char_lstm_classifier', 'num_epochs': 9, 'model': 'char_lstm_classifier', 'batch_size': 16, 'glove_dir': './glove.6B', 'rnn_hidden_dim': 256, 'filter_size': [2, 3, 4, 5], 'vocab_size': 10000, 'dropout_keep_prob': 0.5, 'embedding_dim': 300, 'char_embedding_dim': 50}
+
+0 -DOCSTART-
+1 EU rejects German call to boycott British lamb .
+2 Peter Blackburn
+3 BRUSSELS 1996-08-22
+4 The European Commission said on Thursday it disagreed with German advice to consumers to shun British lamb until scientists determine whether mad cow disease can be transmitted to sheep .
+5 Germany 's representative to the European Union 's veterinary committee Werner Zwingmann said on Wednesday consumers should buy sheepmeat from countries other than Britain until the scientific advice was clearer .
+6 " We do n't support any such recommendation because we do n't see any grounds for it , " the Commission 's chief spokesman Nikolaus van der Pas told a news briefing .
+7 He said further scientific study was required and if it was found that action was needed it should be taken by the European Union .
+8 He said a proposal last month by EU Farm Commissioner Franz Fischler to ban sheep brains , spleens and spinal cords from the human and animal food chains was a highly specific and precautionary move to protect human health .
+9 Fischler proposed EU-wide measures after reports from Britain and France that under laboratory conditions sheep could contract Bovine Spongiform Encephalopathy ( BSE ) -- mad cow disease .
+
+
+
+
+
+
+
+
+
+-DOCSTART-EUrejectsGermancalltoboycottBritishlamb.PeterBlackburnBRUSSELS1996-08-22TheEuropeanCommissionsaidonThursdayitdisagreedwithGermanadvicetoconsumerstoshunBritishlambuntilscientistsdeterminewhethermadcowdiseasecanbetransmittedtosheep.Germany'srepresentativetotheEuropeanUnion'sveterinarycommitteeWernerZwingmannsaidonWednesdayconsumersshouldbuysheepmeatfromcountriesotherthanBritainuntilthescientificadvicewasclearer."Wedon'tsupportanysuchrecommendationbecausewedon'tseeanygroundsforit,"theCommission'schiefspokesmanNikolausvanderPastoldanewsbriefing.HesaidfurtherscientificstudywasrequiredandifitwasfoundthatactionwasneededitshouldbetakenbytheEuropeanUnion.HesaidaproposallastmonthbyEUFarmCommissionerFranzFischlertobansheepbrains,spleensandspinalcordsfromthehumanandanimalfoodchainswasahighlyspecificandprecautionarymovetoprotecthumanhealth.FischlerproposedEU-widemeasuresafterreportsfromBritainandFrancethatunderlaboratoryconditionssheepcouldcontractBovineSpongiformEncephalopathy(BSE)--madcowdisease.
+
+
+Word Embedding shape:  (5194, 300)
+
+2018-12-18 11:01:08.161848: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+
+
+2018-12-18 11:01:08.235945: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:964] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-12-18 11:01:08.236373: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce GTX 980 major: 5 minor: 2 memoryClockRate(GHz): 1.329
+pciBusID: 0000:01:00.0
+totalMemory: 3.94GiB freeMemory: 3.48GiB
+2018-12-18 11:01:08.236387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0
+2018-12-18 11:01:08.457063: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-18 11:01:08.457090: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 
+2018-12-18 11:01:08.457095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N 
+2018-12-18 11:01:08.457234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3201 MB memory) -> physical GPU (device: 0, name: GeForce GTX 980, pci bus id: 0000:01:00.0, compute capability: 5.2)
+Building graph for model: Text Classifier
+char key error :  M
+char key error :  x
+char key error :  J
+char key error :  4
+char key error :  7
+char key error :  I
+char key error :  5
+char key error :  $
+char key error :  3
+char key error :  K
+char key error :  V
+char key error :  :
+char key error :  X
+char key error :  /
+char key error :  +
+char key error :  Y
+char key error :  Q
+char key error :  =
+char key error :  &
+char key error :  `
+char key error :  ;
+char key error :  *
+char key error :  %
+char key error :  ?
+char key error :  [
+char key error :  ]
+char key error :  !
+char key error :  @
+Traceback (most recent call last):
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1334, in _do_call
+    return fn(*args)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1319, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1407, in _call_tf_sessionrun
+    run_metadata)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: First dimension of predictions 16 must match length of targets 331
+	 [[{{node in_top_k/InTopKV2}} = InTopKV2[T=DT_INT32, _device="/job:localhost/replica:0/task:0/device:CPU:0"](inference/layer_out/dense/BiasAdd/_101, _arg_train_label_ph_0_4, in_top_k/InTopKV2/k)]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hdh/Documents/BigdataNLP/sent_classification/main.py", line 102, in <module>
+    train_model(args, char_lstm_classifier.TextClassifier)
+  File "/home/hdh/Documents/BigdataNLP/sent_classification/main.py", line 60, in train_model
+    model.train()
+  File "/home/hdh/Documents/BigdataNLP/sent_classification/train/char_lstm_classifier.py", line 209, in train
+    feed_dict=self.make_feed_dict(batch_data)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 929, in run
+    run_metadata_ptr)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1152, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1328, in _do_run
+    run_metadata)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 1348, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: First dimension of predictions 16 must match length of targets 331
+	 [[node in_top_k/InTopKV2 (defined at /home/hdh/Documents/BigdataNLP/sent_classification/train/char_lstm_classifier.py:173)  = InTopKV2[T=DT_INT32, _device="/job:localhost/replica:0/task:0/device:CPU:0"](inference/layer_out/dense/BiasAdd/_101, _arg_train_label_ph_0_4, in_top_k/InTopKV2/k)]]
+
+Caused by op 'in_top_k/InTopKV2', defined at:
+  File "/home/hdh/Documents/BigdataNLP/sent_classification/main.py", line 102, in <module>
+    train_model(args, char_lstm_classifier.TextClassifier)
+  File "/home/hdh/Documents/BigdataNLP/sent_classification/main.py", line 60, in train_model
+    model.train()
+  File "/home/hdh/Documents/BigdataNLP/sent_classification/train/char_lstm_classifier.py", line 189, in train
+    self.build_graph()
+  File "/home/hdh/Documents/BigdataNLP/sent_classification/train/char_lstm_classifier.py", line 173, in build_graph
+    eval = tf.nn.in_top_k(logits, self.labels_ph, 1)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/ops/nn_ops.py", line 2678, in in_top_k
+    return gen_nn_ops.in_top_kv2(predictions, targets, k, name=name)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 4229, in in_top_kv2
+    "InTopKV2", predictions=predictions, targets=targets, k=k, name=name)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/framework/op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/util/deprecation.py", line 488, in new_func
+    return func(*args, **kwargs)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/framework/ops.py", line 3274, in create_op
+    op_def=op_def)
+  File "/home/hdh/Env/p3ten10/lib/python3.5/site-packages/tensorflow/python/framework/ops.py", line 1770, in __init__
+    self._traceback = tf_stack.extract_stack()
+
+InvalidArgumentError (see above for traceback): First dimension of predictions 16 must match length of targets 331
+	 [[node in_top_k/InTopKV2 (defined at /home/hdh/Documents/BigdataNLP/sent_classification/train/char_lstm_classifier.py:173)  = InTopKV2[T=DT_INT32, _device="/job:localhost/replica:0/task:0/device:CPU:0"](inference/layer_out/dense/BiasAdd/_101, _arg_train_label_ph_0_4, in_top_k/InTopKV2/k)]]
+
+
+Process finished with exit code 1
+

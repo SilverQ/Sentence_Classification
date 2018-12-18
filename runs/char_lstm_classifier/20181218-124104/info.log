@@ -1,0 +1,2 @@
+2018-12-18 12:41:04,811 | INFO     | Loaded hyper-parameter configuration from file: hparams/default.json
+2018-12-18 12:41:04,811 | INFO     | Hyper-parameters: {'filter_size': [2, 3, 4, 5], 'glove_dir': './glove.6B', 'num_filters': 50, 'rnn_hidden_dim': 256, 'batch_size': 16, 'model': 'char_lstm_classifier', 'char_embedding_dim': 50, 'embedding_dim': 300, 'vocab_size': 10000, 'dropout_keep_prob': 1, 'root_dir': './runs/char_lstm_classifier', 'num_epochs': 9}

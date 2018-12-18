@@ -1,0 +1,76 @@
+2018-12-14 16:01:08,730 | INFO     | Loaded hyper-parameter configuration from file: hparams/default.json | 49:train_model
+2018-12-14 16:01:08,730 | INFO     | Hyper-parameters: {'filter_size': [2, 3, 4, 5], 'char_embedding_dim': 50, 'glove_dir': './glove.6B', 'dropout_keep_prob': 0.5, 'num_epochs': 9, 'root_dir': './runs/char_lstm_classifier', 'embedding_dim': 300, 'model': 'char_lstm_classifier', 'vocab_size': 10000, 'num_filters': 50, 'batch_size': 16, 'rnn_hidden_dim': 256} | 50:train_model
+2018-12-14 16:01:12,235 | INFO     | [Step 10] loss: 0.6231, accuracy: 68.75% | 214:train
+2018-12-14 16:01:13,038 | INFO     | [Step 20] loss: 0.6540, accuracy: 62.50% | 214:train
+2018-12-14 16:01:13,754 | INFO     | [Step 30] loss: 0.7137, accuracy: 50.00% | 214:train
+2018-12-14 16:01:14,522 | INFO     | [Step 40] loss: 0.8129, accuracy: 56.25% | 214:train
+2018-12-14 16:01:15,265 | INFO     | [Step 50] loss: 0.7176, accuracy: 56.25% | 214:train
+2018-12-14 16:01:16,008 | INFO     | [Step 60] loss: 0.4988, accuracy: 75.00% | 214:train
+2018-12-14 16:01:16,218 | INFO     | End of epoch 1. | 216:train
+2018-12-14 16:01:16,448 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181214-160108/saves_char_lstm_classifier/model.ckpt-63 | 220:train
+2018-12-14 16:01:16,974 | INFO     | [Step 70] loss: 0.6387, accuracy: 56.25% | 214:train
+2018-12-14 16:01:17,741 | INFO     | [Step 80] loss: 0.5194, accuracy: 68.75% | 214:train
+2018-12-14 16:01:18,434 | INFO     | [Step 90] loss: 0.2187, accuracy: 93.75% | 214:train
+2018-12-14 16:01:19,141 | INFO     | [Step 100] loss: 0.4835, accuracy: 75.00% | 214:train
+2018-12-14 16:01:19,904 | INFO     | [Step 110] loss: 0.3997, accuracy: 87.50% | 214:train
+2018-12-14 16:01:20,654 | INFO     | [Step 120] loss: 0.2697, accuracy: 93.75% | 214:train
+2018-12-14 16:01:21,076 | INFO     | End of epoch 2. | 216:train
+2018-12-14 16:01:21,241 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181214-160108/saves_char_lstm_classifier/model.ckpt-126 | 220:train
+2018-12-14 16:01:21,547 | INFO     | [Step 130] loss: 0.2633, accuracy: 87.50% | 214:train
+2018-12-14 16:01:22,271 | INFO     | [Step 140] loss: 0.1078, accuracy: 100.00% | 214:train
+2018-12-14 16:01:23,035 | INFO     | [Step 150] loss: 0.2769, accuracy: 87.50% | 214:train
+2018-12-14 16:01:23,733 | INFO     | [Step 160] loss: 0.1213, accuracy: 93.75% | 214:train
+2018-12-14 16:01:24,484 | INFO     | [Step 170] loss: 0.3914, accuracy: 87.50% | 214:train
+2018-12-14 16:01:25,223 | INFO     | [Step 180] loss: 0.0665, accuracy: 100.00% | 214:train
+2018-12-14 16:01:25,862 | INFO     | End of epoch 3. | 216:train
+2018-12-14 16:01:26,025 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181214-160108/saves_char_lstm_classifier/model.ckpt-189 | 220:train
+2018-12-14 16:01:26,102 | INFO     | [Step 190] loss: 0.1909, accuracy: 87.50% | 214:train
+2018-12-14 16:01:26,828 | INFO     | [Step 200] loss: 0.1120, accuracy: 93.75% | 214:train
+2018-12-14 16:01:27,603 | INFO     | [Step 210] loss: 0.1278, accuracy: 93.75% | 214:train
+2018-12-14 16:01:28,318 | INFO     | [Step 220] loss: 0.0199, accuracy: 100.00% | 214:train
+2018-12-14 16:01:29,076 | INFO     | [Step 230] loss: 0.0520, accuracy: 100.00% | 214:train
+2018-12-14 16:01:29,820 | INFO     | [Step 240] loss: 0.0153, accuracy: 100.00% | 214:train
+2018-12-14 16:01:30,545 | INFO     | [Step 250] loss: 0.0269, accuracy: 100.00% | 214:train
+2018-12-14 16:01:30,678 | INFO     | End of epoch 4. | 216:train
+2018-12-14 16:01:30,841 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181214-160108/saves_char_lstm_classifier/model.ckpt-252 | 220:train
+2018-12-14 16:01:31,421 | INFO     | [Step 260] loss: 0.0054, accuracy: 100.00% | 214:train
+2018-12-14 16:01:32,190 | INFO     | [Step 270] loss: 0.0115, accuracy: 100.00% | 214:train
+2018-12-14 16:01:32,897 | INFO     | [Step 280] loss: 0.0104, accuracy: 100.00% | 214:train
+2018-12-14 16:01:33,618 | INFO     | [Step 290] loss: 0.0015, accuracy: 100.00% | 214:train
+2018-12-14 16:01:34,369 | INFO     | [Step 300] loss: 0.0006, accuracy: 100.00% | 214:train
+2018-12-14 16:01:35,107 | INFO     | [Step 310] loss: 0.0018, accuracy: 100.00% | 214:train
+2018-12-14 16:01:35,453 | INFO     | End of epoch 5. | 216:train
+2018-12-14 16:01:35,688 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181214-160108/saves_char_lstm_classifier/model.ckpt-315 | 220:train
+2018-12-14 16:01:36,059 | INFO     | [Step 320] loss: 0.0196, accuracy: 100.00% | 214:train
+2018-12-14 16:01:36,831 | INFO     | [Step 330] loss: 0.0011, accuracy: 100.00% | 214:train
+2018-12-14 16:01:37,539 | INFO     | [Step 340] loss: 0.0041, accuracy: 100.00% | 214:train
+2018-12-14 16:01:38,226 | INFO     | [Step 350] loss: 0.0005, accuracy: 100.00% | 214:train
+2018-12-14 16:01:38,988 | INFO     | [Step 360] loss: 0.0013, accuracy: 100.00% | 214:train
+2018-12-14 16:01:39,729 | INFO     | [Step 370] loss: 0.0001, accuracy: 100.00% | 214:train
+2018-12-14 16:01:40,298 | INFO     | End of epoch 6. | 216:train
+2018-12-14 16:01:40,475 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181214-160108/saves_char_lstm_classifier/model.ckpt-378 | 220:train
+2018-12-14 16:01:40,624 | INFO     | [Step 380] loss: 0.0004, accuracy: 100.00% | 214:train
+2018-12-14 16:01:41,355 | INFO     | [Step 390] loss: 0.0001, accuracy: 100.00% | 214:train
+2018-12-14 16:01:42,127 | INFO     | [Step 400] loss: 0.0008, accuracy: 100.00% | 214:train
+2018-12-14 16:01:42,835 | INFO     | [Step 410] loss: 0.0002, accuracy: 100.00% | 214:train
+2018-12-14 16:01:43,601 | INFO     | [Step 420] loss: 0.0001, accuracy: 100.00% | 214:train
+2018-12-14 16:01:44,348 | INFO     | [Step 430] loss: 0.0004, accuracy: 100.00% | 214:train
+2018-12-14 16:01:45,078 | INFO     | [Step 440] loss: 0.0006, accuracy: 100.00% | 214:train
+2018-12-14 16:01:45,139 | INFO     | End of epoch 7. | 216:train
+2018-12-14 16:01:45,311 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181214-160108/saves_char_lstm_classifier/model.ckpt-441 | 220:train
+2018-12-14 16:01:45,962 | INFO     | [Step 450] loss: 0.0002, accuracy: 100.00% | 214:train
+2018-12-14 16:01:46,732 | INFO     | [Step 460] loss: 0.0000, accuracy: 100.00% | 214:train
+2018-12-14 16:01:47,437 | INFO     | [Step 470] loss: 0.0001, accuracy: 100.00% | 214:train
+2018-12-14 16:01:48,166 | INFO     | [Step 480] loss: 0.0001, accuracy: 100.00% | 214:train
+2018-12-14 16:01:48,913 | INFO     | [Step 490] loss: 0.0002, accuracy: 100.00% | 214:train
+2018-12-14 16:01:49,650 | INFO     | [Step 500] loss: 0.0004, accuracy: 100.00% | 214:train
+2018-12-14 16:01:49,930 | INFO     | End of epoch 8. | 216:train
+2018-12-14 16:01:50,096 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181214-160108/saves_char_lstm_classifier/model.ckpt-504 | 220:train
+2018-12-14 16:01:50,535 | INFO     | [Step 510] loss: 0.0002, accuracy: 100.00% | 214:train
+2018-12-14 16:01:51,312 | INFO     | [Step 520] loss: 0.0003, accuracy: 100.00% | 214:train
+2018-12-14 16:01:52,022 | INFO     | [Step 530] loss: 0.0003, accuracy: 100.00% | 214:train
+2018-12-14 16:01:52,723 | INFO     | [Step 540] loss: 0.0003, accuracy: 100.00% | 214:train
+2018-12-14 16:01:53,479 | INFO     | [Step 550] loss: 0.0002, accuracy: 100.00% | 214:train
+2018-12-14 16:01:54,231 | INFO     | [Step 560] loss: 0.0001, accuracy: 100.00% | 214:train
+2018-12-14 16:01:54,723 | INFO     | End of epoch 9. | 216:train
+2018-12-14 16:01:54,888 | INFO     | Model saved at: ./runs/char_lstm_classifier/20181214-160108/saves_char_lstm_classifier/model.ckpt-567 | 220:train
