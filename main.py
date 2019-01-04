@@ -8,6 +8,7 @@ import logging
 
 from train import char_lstm_classifier, cnn_classifier
 
+
 def init_logger(path:str):
     if not os.path.exists(path):
         os.makedirs(path)

@@ -65,7 +65,7 @@ class Data:
         self.id2char.insert(0, "<PAD>")
 
         for i, char in enumerate(self.id2char):
-            print("char : ", char)
+            # print("char : ", char)
             self.char2id[char] = i
             # char :  <PAD>
             # char :  e
@@ -106,6 +106,7 @@ class Data:
         with open(os.path.join(self.data_path, "%s.labels" % data_type), "r") as f_handle:
             for i, sentence in enumerate(list(f_handle)):
                 labels.append(sentence.strip().split(' '))
+            # print("labels: ", labels[0:3])
 
         for sentence in inputs:
             lengths.append(len(sentence))
